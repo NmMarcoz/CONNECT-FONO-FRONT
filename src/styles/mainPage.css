@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+}
+#main-container{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100vw;
+
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 50px;
+}
+header{
+    margin-top: 0;
+    width: 100vw;
+    text-align: right;
+    padding-right: 60px;
+    font-family: Helvetica;
+    font-weight: bold;
+
+
+}
+p{
+    margin: 0;
+}
+main{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+h1{
+    margin: 0;
+}
+#loading{
+    color: #f9f9f9;
+}
+#title-2{
+    font-family: Helvetica;
+    font-weight: 200;
+    font-size: 44px;
+    margin: 0;
+    margin-top: 120px;
+    margin-bottom: 14px;
+}
+
+main h1{
+    font-size: 60px;
+    font-weight: 400;
+    padding: 0;
+    margin-bottom: 10px;
+
+
+}
+
+#consult-dashboard-container{
+    transition: width 0.100s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 840px;
+    height: 230px;
+    background: linear-gradient(90deg, #3937BB 0%, #8482D1 100%);
+    border-radius: 30px;
+    padding-inline: 25px;
+
+}
+#consult-dashboard-container-expanded{
+    transition: width 0.100s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 930px;
+    height: 230px;
+    background: linear-gradient(90deg, #3937BB 0%, #8482D1 100%);
+    border-radius: 30px;
+    padding-inline: 25px;
+
+}
+
+#new-consult-container{
+
+}
+#new-consult-container p{
+    font-size: 20px;
+    margin-right: 33px;
+}
+#new-consult-inner-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#main-button {
+    transition: width 0.100s ease;
+    width: 295px;
+    height: 60px;
+    background: #5755cb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer
+}
+
+#main-button :hover{
+    transition: width 0.100s ease;
+    width: 295px;
+    height: 60px;
+    background: #807fe1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: #ffffff;
+
+}
+
+
+
+
+#left-container-section{
+    padding-left: 140px;
+}
+
