@@ -6,9 +6,13 @@ import App from './pages/LoginPage.jsx'
 import './index.css'
 import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
-import MainPage from "./pages/MainPage.jsx";
+import MainPage from "./pages/mainPage/MainPage.jsx";
 
 const router = createBrowserRouter([
+    {
+        path: '/main',
+        element: <MainPage/>
+    },
     {
         path: '/',
         element: <LoginPage/>
@@ -18,10 +22,7 @@ const router = createBrowserRouter([
         element: <RegisterPage/>
 
     },
-    {
-        path: '/main',
-        element: <MainPage/>
-    }
+   
 ]);
 
 createRoot(document.getElementById('root')).render(

@@ -7,6 +7,7 @@ import {Link, useNavigate} from "react-router-dom";
 import axios, {AxiosError} from "axios";
 import ResponseRegisterModal from "../modals/ResponseRegisterModal.jsx";
 import {ToastContainer, toast} from "react-toastify";
+import errorTranslate from '../utils/functions/errorTranslate.js';
 import 'react-toastify/dist/ReactToastify.css';
 import LoginPage from "./LoginPage.jsx";
 
@@ -62,9 +63,14 @@ function RegisterPage() {
             })
             .catch((err) => {
                 if (err instanceof AxiosError) {
-                    toast.error(err.response.data.message)
-                    console.log(err.response.message)
+                    console.log("é bem aqui")
+                    console.log(err.message)
+                    toast.error(errorTranslate(err.message))
+                    console.log(err.message)
+                    return
                 }
+                toast.error(err)
+                return
 
             })
 
